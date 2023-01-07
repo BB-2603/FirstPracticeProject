@@ -1,0 +1,78 @@
+.listBox {
+  display: flex;
+}
+
+#task {
+  width: 35rem;
+  padding: 0.5rem;
+  border-radius: 0.35rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.addBtn {
+  height: 2.75rem;
+  border-top-right-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+}
+
+.task {
+  color: rgb(90, 59, 18);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.35rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 37rem;
+  height: 2rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.task input {
+  margin-right: 1rem;
+}
+
+.deletetask {
+  margin-top: 2rem;
+  height: 3rem;
+  border-top-right-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+}
+
+.deletetask:hover {
+  border: 0.35rem solid rgb(12, 19, 0);
+  border-left: 0;
+}
+
+.contain {
+  display: flex;
+  padding: 15rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.addBtn {
+  color: rgb(245, 240, 240);
+  background-color: rgb(99, 89, 63);
+}
+
+.main {
+  margin-top: -2rem;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.deleteIcon {
+  margin-right: 1rem;
+  border-top-right-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+  width: 1.5em;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
