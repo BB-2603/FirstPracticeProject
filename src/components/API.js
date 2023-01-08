@@ -6,41 +6,7 @@ let addedParamCount = 0;
 
 export class API extends Component {
 
-    getElementFromString = (string) => {
-        let div = document.createElement('div');
-        div.innerHTML = string;
-        return div.firstElementChild;
-    }
 
-    params = () => {
-        document.getElementById('requestJsonBox').style.display = 'none';
-        document.getElementById('parametersBox').style.display = 'block';
-
-    }
-
-    revParams = () => {
-
-        document.getElementById('requestJsonBox').style.display = 'block';
-        document.getElementById('parametersBox').style.display = 'none';
-    }
-
-    addParams = () => {
-
-        let params = document.getElementById('params');
-        let string = `<div className="form-row my-2">
-                        <label for="url" className="col-sm-2 col-form-label">Parameter ${addedParamCount + 2}</label>
-                        <div className="col-md-4">
-                            <input type="text" className="form-control" id="parameterKey${addedParamCount + 2}" placeholder="Enter Parameter ${addedParamCount + 2} Key">
-                        </div>
-                        <div className="col-md-4">
-                            <input type="text" className="form-control" id="parameterValue${addedParamCount + 2}" placeholder="Enter Parameter ${addedParamCount + 2} Value">
-                        </div>
-                        <button className="btn btn-primary deleteParam" onClick={event => this.deleteParams(event.target)}> - </button>
-                        </div>`;
-        let paramElement = this.getElementFromString(string);
-        params.appendChild(paramElement);
-        addedParamCount++;
-    }
 
     deleteParams = (element) => {
         element.paramElement.remove();
@@ -142,30 +108,10 @@ export class API extends Component {
                                         JSON
                                     </label>
                                 </div>
-                                <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="contentType" id="paramsRadio" value="params" onClick={() => this.params()} />
-                                    <label className="form-check-label" for="params">
-                                        Custom Parameters
-                                    </label>
-                                </div>
 
                             </div>
                         </div>
                     </fieldset>
-
-                    <div id="parametersBox" style={{ display: "none" }}>
-                        <div className="form-row">
-                            <label for="url" className="col-sm-2 col-form-label">Parameter 1</label>
-                            <div className="col-md-4">
-                                <input type="text" className="form-control" id="parameterKey1" placeholder="Enter Parameter 1 Key" />
-                            </div>
-                            <div className="col-md-4">
-                                <input type="text" className="form-control" id="parameterValue1" placeholder="Enter Parameter 1 Value" />
-                            </div>
-                            <button id="addParam" className="btn btn-primary" onClick={() => this.addParams()}>+</button>
-                        </div>
-                        <div id="params"></div>
-                    </div>
 
                     <div className="my-3" id="requestJsonBox">
                         <div className="form-group row">
