@@ -1,5 +1,3 @@
-This is a practice project made by me(Bhavya Bansal) for the Round 1 of CSA Inductions for the tech team.
-
 This project is basically a simple page consisting of three components namely: Calculator, ToDo List and API.
 
 Calculator: It is a simple calculator which can be used to perform simple calculations.
